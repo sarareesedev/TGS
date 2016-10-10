@@ -1,0 +1,82 @@
+﻿body {
+}
+
+.section-padding {
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+
+.availableDateList {
+	background:#fff;
+	/*border-radius:0.5em;*/
+	padding:1em 1em;
+	/*display:inline-block;*/
+	width:auto;
+    min-height: 45px;
+}
+.availableDateList li {
+	list-style:none;
+	background:#d1703c;
+	border-bottom:0 solid #fff;
+	color:#fff;
+	height:0;
+	padding:0 0.5em;
+	margin:0;
+	overflow:hidden;
+	line-height:2em;
+	width:100%;
+}
+.availableDateList li:hover {
+	cursor:crosshair
+}
+.availableDateList li.show {
+	height:2em;
+	border-width:2px
+}
+.availableDateList.fade li {
+	transition:all 0.4s ease-out;
+	opacity:0;
+	height:2em
+}
+.availableDateList.fade li.show {
+	opacity:1
+}
+.availableDateList.slide-fade li {
+	transition:all 0.4s ease-out;
+	opacity:0
+}
+.availableDateList.slide-fade li.show {
+	opacity:1
+}
+.availableDateList.swing {
+	-webkit-perspective:100px;
+	perspective:100px
+}
+.availableDateList.swing li {
+	opacity:0;
+	-webkit-transform:rotateX(-90deg);
+	transform:rotateX(-90deg);
+	transition:all 0.5s cubic-bezier(0.36,-0.64,0.34,1.76)
+}
+.availableDateList.swing li.show {
+	opacity:1;
+	-webkit-transform:none;
+	transform:none;
+	transition:all 0.5s cubic-bezier(0.36,-0.64,0.34,1.76)
+}
+.availableDateList.swing-side {
+	-webkit-perspective:200px;
+	perspective:200px
+}
+.availableDateList.swing-side li {
+	-webkit-transform:rotateY(-90deg);
+	transform:rotateY(-90deg);
+	transition:all 0.5s cubic-bezier(0.36,-0.64,0.34,1.76)
+}
+.availableDateList.swing-side li.show {
+	opacity:1;
+	-webkit-transform:none;
+	transform:none;
+	transition:all 0.5s cubic-bezier(0.36,-0.64,0.34,1.76)
+}
